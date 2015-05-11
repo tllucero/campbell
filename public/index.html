@@ -1,0 +1,618 @@
+<!doctype html>
+<html>
+<head>
+  <title>Welcome to Jazz41 Online Radio Station</title>
+  <meta charset="utf-8"/>
+<!-- TLL 2015/03/07 - no visible difference here -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+
+  <script type="text/javascript" src="Scripts/jquery-1.11.1.min.js"></script>
+
+<!--[if IE]>
+   <script src="http://html5shiv.googlecode.com/shiv/svn/trunk/html5.js">
+<! [endif]-->
+
+  <link type="text/css" rel="stylesheet" href="CSS/site.css">
+  <link type="text/css" rel="stylesheet" href="CSS/site-01.css">
+
+<!--  <script type="text/javascript" src="JS/jazz41-01.js"></script>
+-->
+
+</head>
+<body id="home">
+  <div  id="wrapper">     
+    <header>
+      <!-- <img src="images/Banner.jpg" alt ="banner-image"> -->
+      <p id="banner">Jazz41.com</p>
+      <a class="to_nav" href="#primary_nav_01">Menu</a> 
+    </header>
+
+<!--
+    <aside id="ads1"> 
+      <div class="adsContents">
+        <ul>
+<!--
+          <li class="hidden">                        
+            <a href="#" id="eCalendar">Event Calendar</a>
+          </li>
+-->               
+<!--
+          <li class="hidden">                        
+            THIS IS SAMPLE AD NUMBER 1.
+            PLACE YOUR AD HERE!!
+          </li> 
+          <li class="hidden">                        
+            THIS IS SAMPLE AD NUMBER 2.
+            PLACE YOUR AD HERE!!                      
+          </li> 
+          <li class="hidden">                        
+            THIS IS SAMPLE AD NUMBER 3.
+            PLACE YOUR AD HERE!!                          
+          </li> 
+          <li class="hidden">                        
+            THIS IS SAMPLE AD NUMBER 4.
+            PLACE YOUR AD HERE!!                        
+          </li>   
+          <li class="hidden">                        
+            THIS IS SAMPLE AD NUMBER 5.
+            PLACE YOUR AD HERE!!                      
+          </li> 
+          <li class="hidden">                        
+            THIS IS SAMPLE AD NUMBER 6.
+            PLACE YOUR AD HERE!!                          
+          </li> 
+                             
+        </ul>
+      </div>
+    </aside>
+-->                          
+
+    <div id="mainContent"> 
+<!-- TLL 03/06/15 this should be hidden and show when video ends -->
+<!--      <div id="radio-wrapper" class="hidden" -->
+      <div id="radio-wrapper" class="hidden">
+<!--        style="position:relative;top:0;" -->
+        <div id="radioContainer">
+          <div id="radio">
+            <iframe src="http://www.innerscopemagazine.com/RadioPlayer.html" 
+              id="RadPlayer" name="FlashRadioPlayer"  width="502" height="32" 
+              scrolling="no" frameborder="0">
+            </iframe>
+          </div> <!-- End radio -->
+
+          <div id="SongTitle" > <span id="cc_strinfo_summary_ac15" class="cc_streaminfo">Loading ...</span>
+          </div>
+        </div>
+
+<!-- style="position:relative;float:left;margin-left:1%;" -->
+        <div id="eCalendarTitle">
+          <a href="#" id="back" >BACK</a>
+          <div id="welcome">Welcome to the Event Calendar
+          </div> 
+          <div id="months"> 
+            <select id="events" >
+              <option  >Select A Month</option>
+              <option value="Jan" >January</option>
+              <option value="Feb">February</option>
+              <option value="Mar">March</option>
+              <option value="Apr">April</option>
+              <option value="May" >May</option>
+              <option value="Jun">June</option>
+              <option value="Jul">July</option>
+              <option value="Aug">August</option>
+              <option value="Sept">September</option>
+              <option value="Oct">October</option>
+              <option value="Nov">November</option>
+              <option value="Dec">December</option>
+            </select>         
+          </div>               
+        </div><!-- End CalendarTitle-->
+      </div><!-- End radio-wrapper -->
+      
+
+      <div id="wrapper-02">
+<!-- TLL 03/06/15 this should show and be hidden when video ends -->
+<!--        <div id ="box" class="switch hidden"> -->
+        <div id ="box" class="switch">
+          <video class="vid" preload="metadata" controls="true" id="video1" 
+            autoplay width=100%; >
+            <source src="Music/Jazz41.mp4" type="video/mp4">
+            <source src="Music/Jazz41.webm" type="video/webm">
+            <source src="Music/Jazz41.ogv" type="video/ogg">
+            <embed src="http://www.Jazz41.com/Music/Jazz41.flv" type="application/x-shockwave-flash" 
+              allowscriptacces="always" allowfullscreen="true">
+            </embed>
+          </video>
+        </div><!-- End of box -->
+
+<!-- TLL 03/06/15 this should be hidden and show when video ends -->
+<!--        <div id="main_page" class="switch"> -->
+        <div id="main_page" class="switch hidden">
+          <div id="IframeButtons">
+            <div id="top-row">
+              <ul>
+                <li>
+                  <a href="Clients/AP/AP.html" >
+                    <img src="Clients/AP/images/AP_Small.jpg" id="Page1" width="55" height="65" 
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                   
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page7" width="55" height="65" 
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page31" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page25" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="MaryKay.html" >
+                    <img src="Clients/images/Mary_Small.jpg" id="Page5" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page6" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page7" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page8" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page9" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Clients/Cookies/Cookies.html" >
+                    <img src="Clients/Cookies/images/Cookies_Small.jpg" id="Page2" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+              </ul>
+            </div><!-- End top-row -->
+
+            <div id="left-column">
+              <ul>
+                <li>
+                  <a href="AP.html" >
+                    <img src="Clients/images/AP_Small.jpg" id="Page11" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                   
+                <li>
+                  <a href="Cookies.html" >
+                    <img src="Clients/images/Cookies/Cookies_Small.jpg" id="Page12" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Bagio.html" >
+                    <img src="Clients/images/Bagio/Pizza_Small.jpg" id="Page13" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="BTR.html" >
+                    <img src="Clients/images/BTR_Small.jpg" id="Page14" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="MaryKay.html" >
+                    <img src="Clients/images/Kay_Small.jpg" id="Page15" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page16" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+              </ul>
+            </div> <!-- End left-column -->
+
+            <div id="IFrame">
+    <!--      <div class="SlideContainer">
+                <div class="Slides">
+                  <div class="Slide">
+                    <div style="text-align:center">
+                      <a href="#" class="Back">FORWARD &raquo; 
+                      </a>
+                    </div>
+    
+                    <div class="Content"> 
+                      <iframe id="AP" name="Page1" width="100%" height="490"></iframe>
+                    </div>
+                  </div>
+    
+                  <div class="Slide">
+                    <div>
+                      <div style="margin-left:90%">
+                        <a href="#" class="Forward"> &laquo; BACK</a>
+                      </div>
+
+                      <div style="margin-left:10%">
+                        <a href="#" class="Back"> FORWARD &raquo;
+                        </a>
+                      </div>
+                    </div>
+                          
+                    <div class="Content">                                                            
+                      <iframe id="Cookies" name="Page2" width="100%" height="490" 
+                        style="-webkit-transform:scale(0.5);-moz-transform-scale(0.5);"></iframe>
+                    </div>
+                  </div>
+
+                  <div class="Slide">
+                    <div class="Content">                                                          
+                      <a href="#" class="Forward">&laquo; BACK</a> 
+                      <iframe id="Bagio"  name="Page3" width="100%" height="490"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                      -->
+              <iframe id="Cookies" name="Page1" width="100%" height="490" ></iframe>
+            </div><!-- End IFrame -->
+
+            <div id="right-column">
+              <ul>
+                <li>
+                  <a href="AP.html" >
+                    <img src="Clients/images/AP_Small.jpg" id="Page17" width="55" height="65" 
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                   
+                <li>
+                  <a href="Cookies.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page18" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Bagio.html" >
+                    <img src="Clients/images/Pizza_Small.jpg" id="Page19" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="BTR.html" >
+                    <img src="Clients/images/BTR_Small.jpg" id="Page20" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertisement.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page21" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+            
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page22" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+              </ul>
+            </div> <!-- End right-column -->
+
+            <div id="bottom-row">
+              <ul>
+                <li>
+                  <a href="Clients/BTR/BTR.html" >
+                    <img src="Clients/BTR/images/BTR_Small.jpg" id="Page4" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page25" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                   
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page25" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page26" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page27" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                     <img src="Clients/images/YourAd_Small.jpg" id="Page28" width="55" height="65"
+                       onclick="DisplayInframe(this.id)" alt="Business Owner">
+                   </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page29" width="55" height="65" 
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page30" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Advertise.html" >
+                    <img src="Clients/images/YourAd_Small.jpg" id="Page31" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a>
+                </li>
+                                    
+                <li>
+                  <a href="Clients/Bagio/Bagio.html" >
+                    <img src="Clients/Bagio/images/Pizza_Small.jpg" id="Page3" width="55" height="65"
+                      onclick="DisplayInframe(this.id)" alt="Business Owner">
+                  </a> 
+                </li>
+              </ul>                      
+            </div><!-- End bottom-row -->
+           
+          </div><!-- End IframeButtons -->
+        </div><!-- End of main_page -->
+
+<!-- -->
+        <div id="calendarInfo" class="switch hidden">
+          <table id="eTable">
+          </table>
+        </div><!-- End of calendarInfo -->
+
+        <div id="about_us" class="switch hidden">
+          <h1>About Us</h1>
+          <p>
+            Jazz41.com is based out of Columbus, Ohio.
+            Jazz41.com plays smooth Jazz music to uplift you and keep you in the groove. 
+            We have put together a playlist that you will enjoy. Get connected with us.
+          </p>
+          <p>
+            There are a lot of good artists here in the Columbus area that are not getting 
+            their true and just exposure, nice jazz clubs, concerts that will come this way
+            with the right outlet to expose their music.
+          </p>
+          <p>
+            Jazz41.com will be that outlet to give the artists the exposure they need and create 
+            that smooth jazz environment that is   already here. Just need to be exposed more in Columbus. 
+          </p>
+          <p>
+            There are many outlets to listen to jazz but will not connect you to the jazz community 
+            here in Columbus. Sit back and enjoy us. Tell someone about Jazz41.com. Keep up with the
+            latest things going on in Columbus and surrounding areas.
+          </p>
+          <p>
+            Give us your feedback and get connected with us. If you are an artist or business 
+            you need to connect with us.
+          </p>
+          <p>
+            Thank You In Advance
+          </p>
+          <p>
+            Alonzo Campbell
+          </p>
+        </div><!-- End of about_us -->
+
+        <div id="marketing" class="switch hidden">
+          <h1>Marketing / Advertising</h1>
+          <p>
+            Jazz41.com would like to thank you in advance for considering us as a 
+            Marketing/ Advertising tool for your business.
+          </p>
+          <p>
+            We at Jazz41.com feel that we have a good tool in smooth jazz to target potential customers
+            for you. For this reason Jazz 41.com has partner with A.C.E Marketing Solutions to give our
+            clients the best marketing and placement of advertising possible for their business. We want
+            a win-win situation for you and us.
+          </p>
+          <p>
+            One main Question of concern, why advertise with us on Internet Radio. We are educating the
+            market that internet radio is main stream. People are using their computers in the work place
+            and home, cell phones, and using the right devices you can have us in your car or at home on
+    	  		your stereo. Get connected for the best smooth jazz music to attract the audience that wants
+    	  		to patronize your business.
+    	    </p>
+    	    <p>
+    	      What makes us different is we focus first on Columbus and surrounding areas that can support
+    	  		your business. Here are a few good reasons to try Jazz41.com as a marketing/ advertising tool
+    	  		for you.  We give your business the exposure it needs. We talk to you to find out what your 
+    	  		needs are and try to reach that first by building blocks using a grid method.
+    	    </p>
+    	    <p>
+    	      <ol>
+        	    <li>We have one of the best playlists to keep our listeners tuned in.</li>
+        	    <li>We are community based, we know the city, and we know where you are at.</li>
+        	    <li>We target market your business or service to the community first then 
+    	  				expand because of the power of the internet.</li>
+    	        <li>We do marketing and advertising; we suggest what will attract traffic flow to your business. </li>
+     	        <li>Last, the cost is affordable for the return on your investment.</li>
+    	      </ol>
+    	    </p>
+    	    <p>
+    	      We advertise our business to attract listeners; because once they tune in we feel that they 
+    	  		will stay, giving you potential customers a chance to hear your message.
+    	    </p>
+    	    <p>
+            A.C.E Marketing Solutions will advise you as a business on different ways to promote your 
+    	  		business by using cross media to give you a supported base. Using others media in connection
+    	  		to give you better exposure. Print, other radio and TV. This is a win-win for you and us if 
+    	  		your business gets the traffic flow. We feel that you will stay with us because of the good 
+    	  		music we have for your potential customers that will always be connected with us.
+    	    </p>
+    	    <p>
+	          Call to schedule an appointment at your location so we can come up with the best possible plan 
+    	  		for  your business. Call now at 614-525-1084 ask for Alonzo Campbell or Kelvin Towns.
+    	    </p>
+        </div><!-- End of marketing -->
+
+        <div id="new_artists" class="switch hidden">
+          <h1>New Artists</h1>
+          <p>Coming soon.
+          </p>
+        </div><!-- End of new_artists -->
+
+        <div id="social_media" class="switch hidden">
+          <h1>Social Media</h1>
+          <p>Coming soon.
+          </p>
+        </div><!-- End of our_store -->
+
+        <div id="our_store" class="switch hidden">
+          <h1>Our Store</h1>
+          <p>Coming soon.
+          </p>
+        </div><!-- End of our_store -->
+
+        <div id="contact" class="switch hidden">
+          <h1>Contact</h1>
+          <p>
+        	  Phone: 614-525-1084 and ask for Alonzo Campbell or Kelvin Towns
+          </p>
+        </div><!-- End of contact -->
+
+        <div id="community_news" class="switch hidden">
+          <h1>Community News</h1>
+          <p>Coming soon.
+          </p>
+        </div><!-- End of community_news -->
+
+      </div><!-- End of wrapper-02 -->
+    </div><!-- End mainContent -->
+
+<!--
+    <aside id="ads2">
+<!--
+      <div class="adsContents" id="ads2ListItems">
+        <ul>
+          <li>                        
+            More Ads
+          </li>
+               
+          <li>
+            More Ads                        
+          </li> 
+          <li>
+            More Ads                    
+          </li> 
+          <li>             
+            More Ads                        
+          </li> 
+          <li>   
+            More Ads                                    
+          </li>   
+          <li>
+            More Ads                    
+          </li> 
+          <li>
+            More Ads                        
+          </li>                              
+        </ul>
+      </div><!-- End ads2ListItems 
+    </aside>
+-->
+
+    <p></p>
+  </div><!-- End wrapper -->
+  <br>
+  <br>
+
+  <div class="clearfix"></div>
+
+  <nav class="primary_nav" id="primary_nav_01">
+<!--
+    <span><a href="#!calendar" id="n_calendar">Event&nbsp;Calendar</a></span>
+-->
+    <span><a href="#" id="eCalendar">Event&nbsp;Calendar</a></span>
+    <span onclick="show_main_page()"><a href="#!main_page">Home</a></span>
+    <span onclick="show_about_us()"><a href="#!about_us">About&nbsp;Us</a></span>
+    <span onclick="show_marketing()"><a href="#!marketing">Advertising/Marketing</a></span>
+    <span onclick="show_new_artists()"><a href="#!new_artists">New&nbsp;Artists</a></span>
+    <span onclick="show_social_media()"><a href="#!social_media">Social&nbsp;Media</a></span>
+    <span onclick="show_our_store()"><a href="#!our_store">Our&nbsp;Store</a></span>
+    <span onclick="show_contact()"><a href="#!contact">Contact</a></span>
+    <span onclick="show_community_news()"><a href="#!community_news">Community&nbsp;News</a></span>
+  </nav><!-- End of nav -->
+
+  <footer id="pgFooter"> 
+    <div id="StreamingLicensing">
+      <a href="http://www.streamlicensing.com">
+        This station is privately owned and operated and is a StreamLicensing broadcast affiliate.
+        Affiliation is for the sole purpose of reporting and paying our royalty and performance
+        fees. These are reported and paid through StreamLicensing, LLC.
+      </a> 
+    </div><!-- End StreamingLicensing -->
+      
+    <br/><br/>
+
+    <div id="Copy_Right">&#169;&nbsp; copyright 2007-2015 Innerscopemagazine.com</div>
+  </footer><!-- End pgFooter -->
+<!--
+  </div>
+-->
+  <script type="text/javascript" src="JS/jazz41-01.js"></script>
+  <script  type="text/javascript" src="http://streams4.museter.com:2199/system/streaminfo.js"></script>
+</body>
+</html>

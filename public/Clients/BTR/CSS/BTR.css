@@ -1,0 +1,61 @@
+body {margin: 0;padding:0;background:white}
+
+#Page {margin:0 auto;width:800px}
+
+#Banner { width:100%; height:60px;background:#ff6803;text-align:center;} 
+
+#CompanyTitle{position:relative;top:0; width:80%; height:16px; margin: 0 auto;font-size:2em;color:white;}
+
+#Nav {position:relative; width:80%; top:35%; height:20px; padding:0; margin: 0 auto;}
+
+#Nav ul{position:relative; left:12%; ; list-style-type:none; margin: 0 auto; padding: 0; }
+
+#Nav ul li{width:150px; float:left; margin:0 5px 0 5px;background:gray; border-bottom:1px solid yellow; border-top:1px solid yellow }
+
+#Nav ul li a {text-decoration:none;font-size:1em;color:white; display: block;line height:20px; width:150px}
+
+#Listingcontainer{position:relative;margin:0 auto; width:100%;}/*Div container table */
+#Listing{width:100%; } /*table name*/
+
+table{border-collapse:collapse;border:1px solid gray}
+
+.Row1_Even_RightSide{background-color:orange;}
+
+.Row1_Odd_Instruction {width:15%;height:16px;text-align:center;background-color:#0a65ba;color:#d2d3d5;}
+.Row1_Even_Instruction {width:15%;height:16px;text-align:center;background-color:orange;color:#3905fc;}
+
+td.Row1_RightSide{width:85%;height:16px;background-color:#0a65ba} 
+.ListingStreetAddress{position:relative; float:left; padding:0 5px 0 5px; text-align:left; font-size:1.5em;width:48%;color:white;}
+.Price{position:relative; float:left; padding:0 5px 0 0; text-align:Right; font-size:1.5em;width:49%;color:white;}
+
+table.Row2_LeftSide_HouseImage {width:15%;height:100px; border:1px solid gray}
+.Row2_LeftSide_HouseImage img{position:relative; width:100%;height:100px}
+td .Row2_RightSide{width:85%; height:40px}
+
+.Box1 {position:relative;float:left;width:40%;height:16px;}
+.ListingCityState{position:relative; float:left; padding:0 5px 0 5px; text-align:left; font-size:1em;width:60%;color:black;}
+.BedRoom{position:relative; float:left; padding:0 5px 0 5px; text-align:left;font-weight:bold; font-size:1em;width:12%;color:black;}
+.Bath{position:relative; float:left; padding:0 5px 0 5px; text-align:left;font-weight:bold; font-size:1em;width:12%;color:black;}
+
+.Box2{position:relative;float:left;width:60%;height:16px;}
+.HomeType{position:relative; float:left; padding:0 0 0 5px; text-align:left; font-size:1em;width:35%;color:black;}
+.SquareFootage{position:relative; float:left; padding:0 5px 0 0; text-align:center; font-size:1em;width:30%;color:black;}
+.MonthyPayment{position:relative; float:left; padding:0 5px 0 0; text-align:right; font-size:1em;width:30%;color:magenta;}
+
+.Row1_Even_RightSide{background-color:orange;}
+
+.Row1_Even_RightSide .Price {color:#3905fc}
+.Row1_Even_RightSide .ListingStreetAddress {color:#3905fc;}
+
+.Row3{width:85%; height:40px; padding:0; }
+
+.CompanyLogo{position:relative; padding-left:5px; float:left; width:45px;height:40px;}
+.RealEstateCompany{position:relative; float:left; top:30%; padding:0 5px 0 5px;height:20px; text-align:left;  font-size:1em;width:31.2%;color:black;}
+
+.ConstructionAge{position:relative;top:30%;padding:0 5px 0 5px; float:left;height:20px; text-align:left;  font-size:1.2em;width:55.7%;color:gray;}
+
+td .Row4{width:85%; height:40px}
+.Map a{position:relative;float:left; top:30%; padding:0 20px 0 0; width:36.5%;text-align:right}
+.FullDetails{position:relative; float:left; text-align:left; padding:0 0 0 10px; font-size:1.5em;width:58%;color:Orange;}
+
+

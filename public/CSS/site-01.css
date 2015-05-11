@@ -1,0 +1,263 @@
+/* site-01.css */
+?* This is CSS for the main page only.
+
+
+#wrapper {
+  margin:0 auto;
+  width:1300px; 
+/*  width:100%; */
+/*  height:835px;     */
+}
+
+
+#IframeButtons iframe {  
+  position:relative;
+  margin-top:-35px;
+  transform: scale(1,.85)
+}
+
+img {display: block; width:100%;}    
+
+#ads1 li a{color:red}
+
+li a img{text-align:center; display: block; width:99%;color:blue }
+
+#ads1{ 
+  float:left;
+
+  color:black;
+  width:15%;
+    
+  background:#6d788a;
+     
+  height:670px;
+}
+
+#ads2ListItems li {height:72px}
+
+.adsContents {
+  margin:4%; 
+  padding:2%; 
+/*  width:88%;  */
+  height:96%;
+  background-image:url("./images/");
+}     
+
+.adsContents ul {
+  margin: 0 auto; 
+  width:90%;
+  text-align:center;
+}
+     
+.adsContents ul li { 
+  display: block;
+  margin:8% 3%; 
+/*  width:93.9%; */
+}
+
+#mainContent {
+/*  width:70%; */
+/*  float:left;  */
+  width: 90%;
+  background:#6d788a;
+  height:670px;  
+}
+    
+#radio { position:relative; z-index:900;height:100%;width:100%; background-color:#6d788a }
+
+#radio-wrapper { 
+  position:relative;
+  width:100%; 
+  height:62px; 
+  top:0;
+}
+
+#radioContainer { position:absolute;top:0; z-index:900; height:42px; width:100%; }
+#RadPlayer { position: relative;  margin-left:22%; width:56%; height:100%;}
+
+#SongTitle { 
+  position:relative; width:100%; color:white; 
+  text-align:center;background-color:black;height:25px;
+  z-index:900;margin-top:0px;
+}
+
+#cc_strinfo_summary_ac15 { position:relative; }
+
+ul {list-style:none;margin:0;padding:0; } 
+
+ul li { 
+  /*
+    -moz-border-radius: 6px;
+    border-radius: 6px;*/
+  /*background:#2fddf7;*/
+
+  background:#58d9ff;
+  border:1px solid white;
+  overflow:hidden;
+
+}
+
+#IFrame { position:relative; float:left; width:80.6%; margin:.2%  0; height:430px;border:1px solid white;}
+#IframeButtons { margin-top:1% }
+      
+#top-row { float: left; width:100%; } 
+#top-row ul { margin:0 auto; width:100%; display:inline-block; }          
+#top-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.9%;}    
+
+#left-column { width:6.9%; float:left; margin:.35% 1.35% ; } 
+#left-column ul { margin:0 auto; width:100%;}          
+#left-column ul li{ display:block;margin: 4.5% 1%; width:99%; }
+#months { width:10%; margin-left:1%;}
+#calendarInfo { position:relative; float:left; width:100%; margin:1% 0; height:595px;border:1px solid white;overflow:auto;}
+     
+table {         
+  text-align:center;
+  color:white;
+  margin:0 auto;
+  width:80%;
+}
+
+.grayishblue img, .darkblue img {
+  margin:0 auto;
+  display: block;
+  height:75px;
+  width: 90px;          
+  padding-bottom:10px;
+}
+
+table tr.grayishblue{ background-color: #4c5489;  padding:0; margin:0;height:100px;color:white }
+table tr.darkblue { background-color:#010137;  padding:0; margin:0;height:100px;color:white }
+td {
+  border:0;border:1px solid gray;
+}
+
+tr.grayishblue a, tr.darkblue  a { color:white; }
+.SlideContainer { position: absolute; left: 0; width: 100%; overflow: hidden; }
+.Slides { position: absolute; left: 0; top: 0; height: 100%; overflow-y:scroll }
+.Slides > div { float: left; height: 100%;}
+
+.Slides .Content { text-align: center; }
+.Slides .Content a { font-size: 30px; }
+
+#right-column { width:6.9%; float:left; margin:.35% 1% ; }
+#right-column ul { margin:0 auto; width:100%; }
+#right-column ul li {display:block; margin:4.5% 1% ; width:99%; }
+
+#bottom-row       { clear: left; width:100%; }  
+#bottom-row ul    { margin:0 auto; width:100%; display:inline-block }
+#bottom-row ul li { display:inline-block; margin: .662% 1.1% .662% 1.35%; width:6.9%; }       
+
+#ads2 {
+  float:right;
+  color:black;
+  width:15%;
+  /*background-image:url("./images/");*/
+  background:#6d788a;
+  height:670px;
+}
+
+#pgFooter{
+  clear: left;
+  background: #010137; 
+  padding: 20;
+  margin: 0 10 10 10;
+}
+
+.Nav {
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+.Nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Nav-left {
+  position: relative;
+  top: -8px;
+  left: 15px;
+  margin: 10 0 20 0; 
+  text-align: left;
+}
+
+.Nav-right {
+  float: right; 
+  position: relative;
+  top: -17px;
+  right: 10px;
+  margin: 10 0 20 0;
+  text-align: center;
+}
+
+.Nav-left {
+  float: left; color:red;
+  margin-right: -20;
+}
+
+.Nav-right {
+  float: right;
+  margin-left: -20;
+}
+
+.Nav li {
+  float: left; 
+  background: #010137;
+  border: 0px;
+  margin: 0;
+  display: inline; 
+}
+
+.Nav a {
+  display: block;
+  color: white;
+  background-color: #010137;
+  padding: 20 15;
+  text-decoration: none;
+  text-align: center;
+}
+
+.Nav a {
+  display: block;
+  padding: 20 15;
+  text-align: center;
+}
+
+.Nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #010137;
+  padding: 20 20;
+}
+
+.Nav a:link, a:visited {
+  background-color: #010137;
+}
+
+.Nav a:hover {
+  background-color: #4040E0;
+}
+
+.Nav a:link {
+  background-color: #010137;
+}
+
+#StreamingLicensing {
+  clear: both;
+  font-size:.6em; 
+  text-align: center;
+/*  position:relative; */
+/*  top:20px; */
+}
+
+#StreamingLicensing a {
+  color: #FF0000;
+}
+
+#StreamingLicensing a:hover {
+  color: #FF00FF;
+}
+

@@ -1,0 +1,21 @@
+body{margin: 0;padding:0;background-color:#af9075;}
+
+#Container{margin:0 auto; width:800px;}
+
+#Banner{position:relative;width:100%;height:100px;background-image:url(../images/CarsBG.jpg)}
+
+
+
+
+.image {height:110px; width:200px;background:#fff;}
+.info {width:261px; background:#8f6549;}
+img {height:110px; width:261px;}
+
+table .VehicleDescriptions {width:196px}
+
+.VehicleInfo td{width:65px;}
+.VehicleInfo2 td{width:196px;}
+.Data1 td{background-color:gray;}
+.Data2 td{background-color:blue}
+
+#Footer{position:relative;width:100%;height:50px;background:black; color:white;}
