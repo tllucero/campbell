@@ -73,11 +73,11 @@ li a img{text-align:center; display: block; width:99%;color:blue }
 
 #radioContainer { 
   position:absolute;
-  top:0;
   z-index:900;
 /*  height:42px; */
   height:62px;
   width:100%;
+  top:0;
 }
     
 #radio { 
@@ -85,11 +85,19 @@ li a img{text-align:center; display: block; width:99%;color:blue }
   z-index:900;
   height:100%;
   background-color:#6d788a;
-  margin-left:22%; 
-  width:56%;
+/*  margin-left: 40%; */
+  height: 62px;
+  width: 100px;
+  position:absolute;
+  top: 0
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
 }
 
-#RadPlayer { position: relative;  margin-left:22%; width:56%; height:100%;}
+#RadPlayer { 
+}
 
 #SongTitle { 
   position:relative; width:100%; color:white; 
@@ -276,4 +284,5 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
 #StreamingLicensing a:hover {
   color: #FF00FF;
 }
+
 

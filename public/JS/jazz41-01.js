@@ -202,10 +202,23 @@ function showRadio() {
 
 /* creates new Radio */
   var radioData = "";
+/*
   radioData += '<iframe src="http://www.innerscopemagazine.com/RadioPlayer.html" ' +
     'id="RadPlayer" name="FlashRadioPlayer"  width="502" height="32" ' +
     'scrolling="no" frameborder="0">' +
     '</iframe>'
+*/
+  radioData += '<div id="RadPlayer"> ' +
+                 '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" ' +
+                 'width="501" height="32" bgcolor="#FFFFFF" id="musicBox"> ' +
+                 '<param name="flashvars" value="url=http://usa7.fastcast4u.com:5813/;' +
+                 '&lang=en&codec=mp3&volume=35&introurl=&autoplay=true&traking=true' +
+                 '&jsevents=false&buffering=5&title=Free%20Radio Columbus"> ' +
+                 '<param name="wmode" value="window" /> ' +
+                 '<param name="allowscriptaccess" value="always" /> ' +
+                 '<param name="scale" value="noscale" /> ' +
+               '</div>'
+
  $("#radio").append(radioData);
 
   radioExists = true;
