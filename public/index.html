@@ -75,13 +75,25 @@
 <!--        style="position:relative;top:0;" -->
         <div id="radioContainer">
           <div id="radio">
+<!--
             <iframe src="http://www.jazz41.com/RadioPlayer.html" 
               id="RadPlayer" name="FlashRadioPlayer"  width="502" height="32" 
               scrolling="no" frameborder="0">
             </iframe>
+-->
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+              width="501" height="32" bgcolor="#FFFFFF" id="musicBox">
+              <param name="flashvars" value="url=http://usa7.fastcast4u.com:5813/;&lang=en&codec=mp3&volume=35&introurl=&autoplay=true&traking=true&jsevents=false&buffering=5&title=Free%20Radio Columbus">
+              <param name="wmode" value="window" />
+              <param name="allowscriptaccess" value="always" />
+              <param name="scale" value="noscale" />
+            </object>
+
+            <div class="cc_player" data-username="kflemi00">Loading ...</div>
           </div> <!-- End radio -->
 
-          <div id="SongTitle" > <span id="cc_strinfo_summary_ac15" class="cc_streaminfo">Loading ...</span>
+          <div id="SongTitle" > <span id="cc_strinfo_summary_ac15" class="cc_streaminfo"></span>
+
           </div>
         </div>
 
@@ -613,6 +625,11 @@
   </div>
 -->
   <script type="text/javascript" src="JS/jazz41-01.js"></script>
+<!-- TLL 05/12/15
   <script  type="text/javascript" src="http://streams4.museter.com:2199/system/streaminfo.js"></script>
+-->
+<!-- end TLL 05/12/15 -->
+  <script language="javascript" type="text/javascript" src="http://cp.usa7.fastcast4u.com:2199/system/player.js">
+  </script>
 </body>
 </html>

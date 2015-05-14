@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+  <event>    
+    <firstname>George</firstname>    
+    <lastname>Benson</lastname>
+    <audio>Music/George Benson_Clip.mp3</audio>
+    <video> test video1 </video>     
+    <image>images/georgeBenson.jpg</image>   
+    <startdate>Jan/01/2014 8:00 PM</startdate>
+    <enddate>Jan/01/2014 10:00 PM</enddate>
+    <place>Location1</place>
+  </event>
+  <event>
+    <firstname>Miles</firstname>    
+    <lastname>Davis</lastname>
+    <audio>test audio2</audio>
+    <video> test video2 </video>
+    <image>images/milesDavis.jpg</image>   
+    <startdate>Feb/01/2014 2:00 PM</startdate>
+    <enddate>Feb/02/2014 2:00 PM</enddate>
+    <place>Location2</place>
+  </event>
+  <event>
+    <firstname>Kenny</firstname>    
+    <lastname>G</lastname>
+    <audio>test audio</audio>
+    <video> test video </video>
+    <image>images/kennyG.jpg</image>   
+    <startdate>Feb/05/2014 2:00 PM</startdate>
+    <enddate>Feb/06/2014 2:00 PM</enddate>
+    <place>Location3</place>
+  </event>
+  <event>
+    <firstname>Michael</firstname>
+    <lastname>Jackson</lastname>
+    <audio>test audio</audio>
+    <video> test video </video>
+    <image>images/face4.jpg</image>   
+    <startdate>Apr/01/2014 2:00 PM</startdate>
+    <enddate>Apr/02/2014 2:00 PM</enddate>
+    <place>Location4</place>
+  </event>
+  <event>
+    <firstname>Louis</firstname>
+    <lastname>Armstrong</lastname>
+    <audio>test audio</audio>
+    <video> test video </video>
+    <image>images/face4.jpg</image>   
+    <startdate>Apr/03/2014 2:00 PM</startdate>
+    <enddate>Apr/04/2014 2:00 PM</enddate>
+    <place>Location4</place>
+  </event>
+  <event>
+    <firstname>Nina</firstname>    
+    <lastname>Simone</lastname>
+    <audio>test audio</audio>
+    <video> test video </video>
+    <image>images/face5.jpg</image>   
+    <startdate>May/01/2014 2:00 PM</startdate>
+    <enddate>May/02/2014 2:00 PM</enddate>
+    <place>Location5</place>
+  </event>
+  <event>
+    <firstname>Billy</firstname>    
+    <lastname>Jean</lastname>
+    <audio>test audio</audio>
+    <video> test video </video>
+    <image>images/face6.jpg</image>   
+    <startdate>Aug/01/2014 2:00 PM</startdate>
+    <enddate>Aug/02/2014 2:00 PM</enddate>
+    <place>Location6</place>
+  </event>
+</events>
