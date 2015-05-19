@@ -61,7 +61,7 @@ function PlayPause() {
     }
 /* end two fix */
   } else {
-/* two radio fix */
+/* two radio fix 
     if (sitePlayer.isPlaying()) {
       sitePlayer.pause();
       siteRadioPaused = true;
@@ -81,7 +81,7 @@ function GetFirstMonthEvent() {
     datatype: "xml",
     success: function (data) {  
       filteredEventData = $(data).find("event").filter(function () {                    
-        return $.trim($(this).find("startdate").text()).match("Jan");
+        return $.trim($(this).find("startdate").text()).match("May");
       });
       $(filteredEventData).each(function () {
         var processedEventData = "";
