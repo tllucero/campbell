@@ -11,7 +11,8 @@ var page_our_store = 7;
 var page_contact = 8;
 var page_community_news = 9;
 
-var radioExists = true;
+/* var radioExists = true; */
+var siteRadioPaused = false;
 
 var visibleDIV;
 
@@ -37,14 +38,35 @@ $(function () {
 });
     
 function PlayPause() {
+/* two radio fix
   radioExists = false;
   $("#RadPlayer").remove();
   $('#SongTitle').remove();
+ end two radio fix */
+
+/* two radio fix */
+  var sitePlayer;
+  sitePlayer = document.getElementById('musicBox');
+/* end two radio fix */
+
   var player;
   player = document.getElementById('myplayer');
+
   if (player.duration > 0 && !player.paused) {
     player.pause();
+/* two radio fix
+    if (siteRadioPaused) {
+      sitePlayer.play();
+      siteRadioPaused = false;
+    }
+/* end two fix */
   } else {
+/* two radio fix */
+    if (sitePlayer.isPlaying()) {
+      sitePlayer.pause();
+      siteRadioPaused = true;
+    }
+/* end two radio fix */
     player.play();
   }
 }
@@ -208,6 +230,7 @@ function showRadio() {
     'scrolling="no" frameborder="0">' +
     '</iframe>'
 */
+
   radioData += '<div id="RadPlayer"> ' +
                  '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" ' +
                  'width="501" height="32" bgcolor="#FFFFFF" id="musicBox"> ' +
@@ -221,7 +244,9 @@ function showRadio() {
 
  $("#radio").append(radioData);
 
+/* fix two radio
   radioExists = true;
+*/
 }
       
 $(document).ready(function () {   
@@ -272,9 +297,12 @@ function hideVideo() {
 /* show divs */
 
 function show_page (page) {
+/* fix two radios
   if (!radioExists) {
     showRadio ();
   }
+*/
+  showRadio ();
 
   if (page == page_main_page) {
 	  elem = document.getElementById("main_page");
