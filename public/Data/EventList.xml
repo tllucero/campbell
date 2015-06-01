@@ -70,4 +70,14 @@
     <enddate>Aug/12/2015 2:00 PM</enddate>
     <place>Location6</place>
   </event>
+  <event>
+    <firstname>Herbie</firstname>    
+    <lastname>Hancock</lastname>
+    <audio>test audio</audio>
+    <video> test video </video>
+    <image>images/HerbieHancock.jpeg</image>   
+    <startdate>Sep/11/2015 8:00 PM</startdate>
+    <enddate>Sep/11/2015 10:00 PM</enddate>
+    <place>Location7</place>
+  </event>
 </events>

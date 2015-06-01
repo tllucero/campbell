@@ -75,9 +75,11 @@ function GetFirstMonthEvent() {
   $("#eTable").children().remove();
   var HighlightOn = false;
 
-  $.ajax({
+/*  $.ajax({ */
+  jQuery.ajax({
     type: 'GET',
     url: "Data/EventList.xml",
+    cache: false,
     datatype: "xml",
     success: function (data) {  
       filteredEventData = $(data).find("event").filter(function () {                    
@@ -134,9 +136,11 @@ function GetEventData(){
   $("#eTable").children().remove();
   var HighlightOn = false;        
          
-  $.ajax({
+/*  $.ajax({ */
+  jQuery.ajax({
     type: 'GET',
     url: "Data/EventList.xml",
+    cache: false,
     datatype: "xml",
     success: function (data) {
       filteredEventData = $(data).find("event").filter(function () {                    
