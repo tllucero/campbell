@@ -109,7 +109,7 @@ a:active {
 
 #wrapper-02 {
 /* width:1400px; */
- width:100%;
+ width:1020px;
 }
 
 /* comment this out */
@@ -284,6 +284,14 @@ a.to_nav:hover, a.to_nav:focus {
   nav:after {
     clear: both;
   }
+
+}
+
+@media only screen and (min-width: 1150px) {
+
+  #wrapper-02 {
+   width:100%;
+}
 
 }
 /* End of media queries */

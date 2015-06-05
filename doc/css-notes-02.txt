@@ -8,10 +8,15 @@ Issues - 06/04/15
 
 Fix:
 
-1. Change wrapper-02 wide from 1400px to 100%
+1. Change wrapper-02 wide from 1400px to 11020px or 100%
 
 #wrapper-02 (site.css)
 /* width:1400px; */
- width:100%;
+ width:1020px;
+}
 
+@media only screen and (min-width: 1150px) {
 
+  #wrapper-02 {
+   width:100%;
+}
