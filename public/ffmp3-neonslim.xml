@@ -1,0 +1,8 @@
+﻿<ffmp3-skin folder="ffmp3-neonslim">
+  <bg image="neon-slim.png" x="0" y="0" ></bg>
+  <play image="Play.png" x="10" y="5" clickimage="Playclick.png" />
+  <stop image="Stop.png" x="84" y="5" clickimage="Stopclick.png" />
+  <text x="275" y="8" width="120" height="18" color="#00FF00" font="Verdana" size="11" />
+  <volume x="159" y="12" width="80" height="10" color1="#00FF00" color2="#808080" barwidth="3" barStep="5" holderImage="holder.jpg" mode="bars" />
+  <status imagePlay="statusplay.png" imageStop="statusstop.png" x="420" y="5" />
+</ffmp3-skin>

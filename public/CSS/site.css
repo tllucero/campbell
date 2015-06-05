@@ -108,7 +108,8 @@ a:active {
 }
 
 #wrapper-02 {
- width:1400px;;
+/* width:1400px; */
+ width:100%;
 }
 
 /* comment this out */

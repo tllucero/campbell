@@ -1,0 +1,17 @@
+*********************************************************
+* /opt/campbell/jazz41.com/1.3/doc/
+* css-notes-02.txt
+*********************************************************
+Issues - 06/04/15
+
+1. Page too wide
+
+Fix:
+
+1. Change wrapper-02 wide from 1400px to 100%
+
+#wrapper-02 (site.css)
+/* width:1400px; */
+ width:100%;
+
+

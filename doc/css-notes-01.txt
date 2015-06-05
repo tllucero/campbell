@@ -1,0 +1,90 @@
+*********************************************************
+* /opt/campbell/jazz41.com/1.3/doc/
+* css-notes-01.txt
+*********************************************************
+Issues - 06/04/15
+1. most of body is way down on the page
+2. player isn't centered on the page
+
+Cause:
+1. Mix relative, absolute, and unspecified
+2. wrapper and radio width
+Fix:
+1a. deleted all but one radio player in index.html
+1b. kept SongTitle in - made it 1px high
+
+2a. change wrapper width from 1300px to 100%
+2b. change radio width from 100px to 360px
+
+site.css and site-01.css
+
+body (site.css)
+  padding:0;
+  margin:0;
+  background: #6d788a;
+  font: 16px/1.4em 'PT Sans', sans-serif;
+wrapper (site-01.css)
+  margin:0 auto;
+/*  width:1300px; */
+  width:100%; 
+/*  height:835px;     */
+div (none)
+header (site.css)
+  width:100%;    
+  height:115px;
+  background: #010137;
+  background-image:url('../images/Banner.jpg');
+/*  background-repeat:no-repeat; */
+  background-repeat:o-repeat;
+  overflow:hidden;
+p (site.css)
+  margin: 0 0 1.5em;
+banner (site.css)
+  position:relative;
+  top:60px; 
+  text-align:center; 
+  font-size:3.5em; 
+  color:white;  
+  text-shadow: -1px 0 #00d0fc, 0 1px #00d0fc, 1px 0 #00d0fc, 0 -1px #00d0fc;
+a (none)
+mainContent (site-01.css)
+  width: 90%;
+  background:#6d788a;
+  height:670px;  
+radio-wrapper (site-01.css)
+  position:relative;
+  width:100%; 
+  height:62px; 
+  top:0;
+radioContainer (site-01.css)
+  position:absolute;
+  z-index:900;
+/*  height:42px; */
+  height:42px;
+  width:100%;
+  top:0;
+radio (site-01.css)
+  position:relative;
+  z-index:900;
+  background-color:#6d788a;
+/*  margin-left: 40%; */
+/*  height: 42px; */
+  width: 360px; 
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
+RadPlayer (site-01.css) (blank)
+SongTitle (site-01.css)
+  position:relative;
+  width:100%;
+  color:white; 
+  text-align:center;
+/*  height:25px; */
+  height:1px;
+  z-index:900;
+  margin-top:0px;
+
+
