@@ -38,36 +38,25 @@ $(function () {
 });
     
 function PlayPause() {
-/* two radio fix
-  radioExists = false;
-  $("#RadPlayer").remove();
-  $('#SongTitle').remove();
- end two radio fix */
-
-/* two radio fix */
-  var sitePlayer;
-  sitePlayer = document.getElementById('musicBox');
-/* end two radio fix */
-
   var player;
   player = document.getElementById('myplayer');
 
   if (player.duration > 0 && !player.paused) {
     player.pause();
-/* two radio fix
-    if (siteRadioPaused) {
-      sitePlayer.play();
-      siteRadioPaused = false;
-    }
-/* end two fix */
+    Player2Paused();
   } else {
-/* two radio fix 
-    if (sitePlayer.isPlaying()) {
-      sitePlayer.pause();
+    if (!player2.paused) { 
+      player2.pause(); 
       siteRadioPaused = true;
     }
-/* end two radio fix */
     player.play();
+  }
+}
+
+function Player2Paused() {
+  if (siteRadioPaused) {
+    player2.play(); 
+    siteRadioPaused = false;
   }
 }
 
@@ -255,6 +244,9 @@ function showRadio() {
       
 $(document).ready(function () {   
   visibleDIV = 1;
+
+/*  $('audio').mediaelementplayer(); */
+
 /* TLL 2015/02/04 */
   HideCalendar();
   
@@ -270,6 +262,7 @@ $(document).ready(function () {
 /* TLL 2015/03/07 - so back button doesn't play the intro */
 /* TLL revert 2015/03/08 */
 /*    location.reload();            */
+    Player2Paused();
     HideCalendar(); 
 
     page = prev_page; 
@@ -301,11 +294,7 @@ function hideVideo() {
 /* show divs */
 
 function show_page (page) {
-/* fix two radios
-  if (!radioExists) {
-    showRadio ();
-  }
-*/
+  Player2Paused();
   showRadio ();
 
   if (page == page_main_page) {

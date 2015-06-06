@@ -3,5 +3,28 @@
 * js-notes-01.txt
 *********************************************************
 
-1. pause radio when playing sample
+Issue
+1. can't pause radio when playing sample
 
+
+Fix:
+a. switch to documented media player - mediaelement
+b. change radio width to 200px
+c. clean up - cut code only used to support previous players
+d. pause radio if playing when sample is chosen
+
+index.html
+
+<head>
+...
+	<script src="js/mediaelement-and-player.min.js"></script>
+...
+	<link rel="stylesheet" href="css/mediaelementplayer.min.css" />
+...
+
+<body>
+...
+              <audio id="player2" src="http://usa7.fastcast4u.com:5813/;" 
+                type="audio/mp3" controls="controls">		
+              </audio>	
+...
