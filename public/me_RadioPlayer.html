@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HTML5 MediaElement</title>	
+	
+	<script src="js/jquery.js"></script>	
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<script src="js/testforfiles.js"></script>	
+	<link rel="stylesheet" href="css/mediaelementplayer.min.css" />
+</head>
+<body>
+
+<h1>MediaElementPlayer.js</h1>
+
+<p>Audio player</p>
+
+<h2>MP3</h2>
+<audio id="player2" src="http://usa7.fastcast4u.com:5813/;" 
+  type="audio/mp3" controls="controls">		
+</audio>	
+
+<script>
+$('audio,video').mediaelementplayer();
+</script>
+
+</body>
+</html>
+
+
