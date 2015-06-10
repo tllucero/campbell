@@ -28,7 +28,7 @@ li a img{text-align:center; display: block; width:99%;color:blue }
   color:black;
   width:15%;
     
-  background:#6d788a;
+  background:#8080c0;
      
   height:670px;
 }
@@ -58,8 +58,9 @@ li a img{text-align:center; display: block; width:99%;color:blue }
 #mainContent {
 /*  width:70%; */
 /*  float:left;  */
+  margin: 0 0 0 5%;
   width: 90%;
-  background:#6d788a;
+  background:#8080c0;
   height:670px;  
 }
 
@@ -83,7 +84,7 @@ li a img{text-align:center; display: block; width:99%;color:blue }
 #radio { 
   position:relative;
   z-index:900;
-  background-color:#6d788a;
+  background-color:#8080c0;
 /*  margin-left: 40%; */
 /*  height: 42px; */
   width: 200px; 
@@ -180,7 +181,7 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
   color:black;
   width:15%;
   /*background-image:url("./images/");*/
-  background:#6d788a;
+  background:#8080c0;
   height:670px;
 }
 
