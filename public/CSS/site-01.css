@@ -61,7 +61,8 @@ li a img{text-align:center; display: block; width:99%;color:blue }
   margin: 0 0 0 5%;
   width: 90%;
   background:#8080c0;
-  height:670px;  
+/*  height:670px;  */
+  min-height: 670px;  
 }
 
 #radio-wrapper { 
