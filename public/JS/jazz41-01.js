@@ -353,6 +353,13 @@ function hide_all () {
 function show_main_page() {
   page = page_main_page; 
   show_page(page);
+/*
+  $("#Cookies").attr("src", "file:///opt/campbell/jazz41.com/1.3/public/Advertise.html/");
+*/
+/*
+  $("#Cookies").attr("src", "file:///opt/campbell/jazz41.com/1.3/public/images/Jazz.jpg");
+*/
+  $("#Cookies").attr("src", "http://jazz41.com/Advertise.html/");
 }
 
 function show_about_us() {
