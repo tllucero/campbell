@@ -359,7 +359,7 @@ function show_main_page() {
 /*
   $("#Cookies").attr("src", "file:///opt/campbell/jazz41.com/1.3/public/images/Jazz.jpg");
 */
-  $("#Cookies").attr("src", "http://jazz41.com/Advertise.html/");
+  $("#Cookies").attr("src", "http://jazz41.com/Advertise.html");
 }
 
 function show_about_us() {
