@@ -16,7 +16,9 @@
   transform: scale(1,.85)
 }
 
+/*
 img {display: block; width:100%;}    
+*/
 
 #ads1 li a{color:red}
 
@@ -133,6 +135,21 @@ ul li {
 #top-row { float: left; width:100%; } 
 #top-row ul { margin:0 auto; width:100%; display:inline-block; }          
 #top-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.9%;}    
+
+/* TLL 2015-07-22 */
+
+
+div span {
+  background:#58d9ff;
+  border:1px solid white;
+  overflow:hidden;
+}
+
+
+
+span a img {text-align:center; display: block; width:99%;color:blue }
+
+/* end TLL 2015-07-22 */
 
 #left-column { width:6.9%; float:left; margin:.35% 1.35% ; } 
 #left-column ul { margin:0 auto; width:100%;}          
@@ -291,4 +308,72 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
   color: #FF00FF;
 }
 
+/* media queries */
 
+@media only screen and (max-width: 500px) {
+
+  #wrapper-02 {
+   width:100%;
+  }
+
+  #top-row {
+    display: none;
+  }
+
+  #top-row-04 { float: left; width:100%; } 
+
+  #top-row-04 div { margin:0 auto; width:100%; display:inline-block; }          
+  #top-row-04 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:20.3%;}    
+
+}
+
+@media only screen and (min-width: 501px) {
+  #top-row-04 { display: none; } 
+}
+
+@media only screen and (min-width: 768px) {
+
+  nav {
+    height: 120px;
+    background: #010137;  
+  }
+
+  .primary_nav span {
+    display: inline;
+    padding: 10px 0px;
+    border: 0;
+    margin: 10;
+    overflow: hidden; 
+  }
+
+  .primary_nav span a {
+    float: left;
+    border: none;
+    margin: 10 10;
+    padding: 10px 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #010137;  
+  }
+
+  /* shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/ */
+  nav:before, header:after {
+    content: "";
+    display:table;
+  }
+
+  nav:after {
+    clear: both;
+  }
+
+}
+
+@media only screen and (min-width: 1150px) {
+
+  #wrapper-02 {
+   width:100%;
+}
+
+}
+/* End of media queries */

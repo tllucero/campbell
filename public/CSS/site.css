@@ -247,8 +247,11 @@ a.to_nav:hover, a.to_nav:focus {
 
 /* End of navigation */
 
+/* moving this to end of site01.css */
+
 /* media queries */
 
+/*
 @media only screen and (min-width: 768px) {
 
   nav {
@@ -274,9 +277,9 @@ a.to_nav:hover, a.to_nav:focus {
     border-radius: 2px;
     background: #010137;  
   }
-
+*/
   /* shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/ */
-  nav:before, header:after {
+/*  nav:before, header:after {
     content: "";
     display:table;
   }
