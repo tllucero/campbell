@@ -310,15 +310,13 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
 
 /* media queries */
 
-@media only screen and (max-width: 500px) {
-
   #wrapper-02 {
    width:100%;
   }
 
-  #top-row {
-    display: none;
-  }
+/**** four row ****/
+
+@media only screen and (max-width: 400px) {
 
   #top-row-04 { float: left; width:100%; } 
 
@@ -327,9 +325,63 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
 
 }
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 401px) {
   #top-row-04 { display: none; } 
 }
+
+/**** end four row ****/
+
+/**** five row ****/
+
+@media only screen and (max-width: 400px) {
+  #top-row-05 { display: none; } 
+}
+
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+
+  #top-row-05 { float: left; width:100%; } 
+
+  #top-row-05 div { margin:0 auto; width:100%; display:inline-block; }          
+  #top-row-05 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:15.8%;}    
+
+}
+
+@media only screen and (min-width: 501px) {
+  #top-row-05 { display: none; } 
+}
+
+/**** end five row ****/
+
+/**** 6 row ****/
+
+@media only screen and (max-width: 500px) {
+  #top-row-06 { display: none; } 
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+
+  #top-row-06 { float: left; width:100%; } 
+
+  #top-row-06 div { margin:0 auto; width:100%; display:inline-block; }          
+  #top-row-06 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:12.8%;}    
+
+}
+
+@media only screen and (min-width: 601px) {
+  #top-row-06 { display: none; } 
+}
+
+/**** end 6 row ****/
+
+/**** 10 row ****/
+
+@media only screen and (max-width: 600px) {
+  #top-row {
+    display: none;
+  }
+}
+
+/**** end 10 row ****/
 
 @media only screen and (min-width: 768px) {
 
