@@ -245,10 +245,7 @@ function showRadio() {
 $(document).ready(function () {   
   visibleDIV = 1;
 
-/* TLL 2015/09/10 */
-/* revert as FF doesn't work */
 /*  $('audio').mediaelementplayer(); */
-/* TLL 2015/09/10 */
 
 /* TLL 2015/02/04 */
   HideCalendar();
@@ -403,5 +400,6 @@ function show_community_news() {
 }
 
 /* End of show divs */
+
 
 

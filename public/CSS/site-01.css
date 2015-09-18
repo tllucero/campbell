@@ -16,9 +16,7 @@
   transform: scale(1,.85)
 }
 
-/*
 img {display: block; width:100%;}    
-*/
 
 #ads1 li a{color:red}
 
@@ -135,21 +133,6 @@ ul li {
 #top-row { float: left; width:100%; } 
 #top-row ul { margin:0 auto; width:100%; display:inline-block; }          
 #top-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.9%;}    
-
-/* TLL 2015-07-22 */
-
-
-div span {
-  background:#58d9ff;
-  border:1px solid white;
-  overflow:hidden;
-}
-
-
-
-span a img {text-align:center; display: block; width:99%;color:blue }
-
-/* end TLL 2015-07-22 */
 
 #left-column { width:6.9%; float:left; margin:.35% 1.35% ; } 
 #left-column ul { margin:0 auto; width:100%;}          
@@ -308,22 +291,19 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
   color: #FF00FF;
 }
 
-/* media queries */
-
-  #wrapper-02 {
-   width:100%;
-  }
 
 /**** banner ****/
 
 @media only screen and (max-width: 400px) {
 
   #banner {
+    top:45px; 
+    left: -30px;
     font-size:2.0em; 
   }
 
   a.to_nav {
-  top: -52px;
+  top: -32px;
   }
 
 }
@@ -331,11 +311,13 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
 @media only screen and (min-width: 401px) and (max-width: 500px) {
 
   #banner {
+    top:45px; 
+    left: -20px;
     font-size:2.4em; 
 }
 
   a.to_nav {
-  top: -62px;
+  top: -40px;
   }
 
 }
@@ -343,11 +325,13 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
 
   #banner {
+    top:45px; 
+    left: -10px;
     font-size:2.8em; 
 }
 
   a.to_nav {
-  top: -72px;
+  top: -50px;
   }
 
 }
@@ -355,12 +339,12 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
 @media only screen and (min-width: 601px) and (max-width: 700px) {
 
   #banner {
-    top:20px; 
+    top:45px; 
     font-size:3.2em; 
 }
 
   a.to_nav {
-  top: -82px;
+  top: -60px;
   }
 
 }
@@ -368,262 +352,15 @@ tr.grayishblue a, tr.darkblue  a { color:white; }
 @media only screen and (min-width: 701px) {
 
   #banner {
-    top:20px; 
+    top:45px; 
     font-size:3.5em; 
 }
 
   a.to_nav {
-  top: -92px;
+  top: -65px;
   }
 
 }
 
 /**** end banner ****/
 
-
-/**** four row ****/
-
-@media only screen and (max-width: 400px) {
-
-  #top-row-04 { float: left; width:100%; } 
-
-  #top-row-04 div { margin:0 auto; width:100%; display:inline-block; }          
-  #top-row-04 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:20.3%;}    
-
-
-  #bottom-row-04 { float: left; width:100%; } 
-
-  #bottom-row-04 div { margin:0 auto; width:100%; display:inline-block; }          
-  #bottom-row-04 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:20.3%;}    
-
-}
-
-@media only screen and (min-width: 401px) {
-  #top-row-04 { display: none; } 
-
-  #bottom-row-04 { display: none; } 
-
-}
-
-/**** end four row ****/
-
-/**** five row ****/
-
-@media only screen and (max-width: 400px) {
-  #top-row-05 { display: none; } 
-  #bottom-row-05 { display: none; } 
-}
-
-@media only screen and (min-width: 401px) and (max-width: 500px) {
-
-  #top-row-05 { float: left; width:100%; } 
-
-  #top-row-05 div { margin:0 auto; width:100%; display:inline-block; }          
-  #top-row-05 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:15.8%;}    
-
-  #bottom-row-05 { float: left; width:100%; } 
-
-  #bottom-row-05 div { margin:0 auto; width:100%; display:inline-block; }          
-  #bottom-row-05 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:15.8%;}    
-
-}
-
-@media only screen and (min-width: 501px) {
-  #top-row-05 { display: none; } 
-  #bottom-row-05 { display: none; } 
-}
-
-/**** end five row ****/
-
-/**** 6 row ****/
-
-@media only screen and (max-width: 500px) {
-  #top-row-06 { display: none; } 
-  #bottom-row-06 { display: none; } 
-}
-
-@media only screen and (min-width: 501px) and (max-width: 600px) {
-
-  #top-row-06 { float: left; width:100%; } 
-
-  #top-row-06 div { margin:0 auto; width:100%; display:inline-block; }          
-  #top-row-06 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:12.8%;}    
-
-  #bottom-row-06 { float: left; width:100%; } 
-
-  #bottom-row-06 div { margin:0 auto; width:100%; display:inline-block; }          
-  #bottom-row-06 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:12.8%;}    
-
-}
-
-@media only screen and (min-width: 601px) {
-  #top-row-06 { display: none; } 
-  #bottom-row-06 { display: none; } 
-}
-
-/**** end 6 row ****/
-
-/**** 7 row ****/
-
-@media only screen and (max-width: 600px) {
-  #top-row-07 { display: none; } 
-  #bottom-row-07 { display: none; } 
-}
-
-@media only screen and (min-width: 601px) and (max-width: 700px) {
-
-  #top-row-07 { float: left; width:100%; } 
-
-  #top-row-07 div { margin:0 auto; width:100%; display:inline-block; }          
-  #top-row-07 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:10.65%;}    
-
-  #bottom-row-07 { float: left; width:100%; } 
-
-  #bottom-row-07 div { margin:0 auto; width:100%; display:inline-block; }          
-  #bottom-row-07 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:10.65%;}    
-
-}
-
-@media only screen and (min-width: 701px) {
-  #top-row-07 { display: none; } 
-  #bottom-row-07 { display: none; } 
-}
-
-/**** end 7 row ****/
-
-/**** 8 row ****/
-
-@media only screen and (max-width: 700px) {
-  #top-row-08 { display: none; } 
-  #bottom-row-08 { display: none; } 
-}
-
-@media only screen and (min-width: 701px) and (max-width: 800px) {
-
-  #top-row-08 { float: left; width:100%; } 
-
-  #top-row-08 div { margin:0 auto; width:100%; display:inline-block; }          
-  #top-row-08 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:9.02%;}    
-
-  #bottom-row-08 { float: left; width:100%; } 
-
-  #bottom-row-08 div { margin:0 auto; width:100%; display:inline-block; }          
-  #bottom-row-08 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:9.02%;}    
-
-}
-
-@media only screen and (min-width: 801px) {
-  #top-row-08 { display: none; } 
-  #bottom-row-08 { display: none; } 
-}
-
-/**** end 8 row ****/
-
-/**** 9 row ****/
-
-@media only screen and (max-width: 800px) {
-  #top-row-09 { display: none; } 
-  #bottom-row-09 { display: none; } 
-}
-
-@media only screen and (min-width: 801px) and (max-width: 900px) {
-
-  #top-row-09 { float: left; width:100%; } 
-
-  #top-row-09 div { margin:0 auto; width:100%; display:inline-block; }          
-  #top-row-09 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:7.75%;}    
-
-  #bottom-row-09 { float: left; width:100%; } 
-
-  #bottom-row-09 div { margin:0 auto; width:100%; display:inline-block; }          
-  #bottom-row-09 div span { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:7.75%;}    
-
-}
-
-@media only screen and (min-width: 901px) {
-  #top-row-09 { display: none; } 
-  #bottom-row-09 { display: none; } 
-}
-
-/**** end 9 row ****/
-
-/**** 10 row ****/
-
-@media only screen and (max-width: 900px) {
-  #top-row {
-    display: none;
-  }
-
-  #bottom-row {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 901px) and (max-width: 1000px) {
-  #top-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.72%;}    
-  #bottom-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.72%;}    
-}
-
-@media only screen and (min-width: 1001px) and (max-width: 1100px) {
-  #top-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.82%;}    
-  #bottom-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.82%;}    
-}
-
-@media only screen and (min-width: 1101px) and (max-width: 1149px) {
-  #top-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.87%;}    
-  #bottom-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.87%;}    
-}
-
-@media only screen and (min-width: 1201px) {
-  #top-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.94%;}    
-  #bottom-row ul li { display:inline-block; margin: .66% 1.1% .66% 1.35%; width:6.94%;}    
-}
-
-/**** end 10 row ****/
-
-@media only screen and (min-width: 768px) {
-
-  nav {
-    height: 120px;
-    background: #010137;  
-  }
-
-  .primary_nav span {
-    display: inline;
-    padding: 10px 0px;
-    border: 0;
-    margin: 10;
-    overflow: hidden; 
-  }
-
-  .primary_nav span a {
-    float: left;
-    border: none;
-    margin: 10 10;
-    padding: 10px 10px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    background: #010137;  
-  }
-
-  /* shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/ */
-  nav:before, header:after {
-    content: "";
-    display:table;
-  }
-
-  nav:after {
-    clear: both;
-  }
-
-}
-
-@media only screen and (min-width: 1150px) {
-
-  #wrapper-02 {
-   width:100%;
-}
-
-}
-/* End of media queries */

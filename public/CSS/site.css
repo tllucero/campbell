@@ -29,12 +29,10 @@ header {
 }
 
 #banner {
-  margin: 0 0 1.5em;
   position:relative;
+  top:60px; 
   text-align:center; 
-  top:25px; 
-  left: -30px;
-  font-size:2.0em; 
+  font-size:3.5em; 
   color:white;  
   text-shadow: -1px 0 #00d0fc, 0 1px #00d0fc, 1px 0 #00d0fc, 0 -1px #00d0fc;
 }
@@ -193,7 +191,7 @@ a:active {
 
 a.to_nav {
   position: relative;
-  top: -52px;
+  top: -50px;
   float: right;
   padding: 10px 10px;
   color: #ffffff;
@@ -249,11 +247,8 @@ a.to_nav:hover, a.to_nav:focus {
 
 /* End of navigation */
 
-/* moving this to end of site01.css */
-
 /* media queries */
 
-/*
 @media only screen and (min-width: 768px) {
 
   nav {
@@ -279,9 +274,9 @@ a.to_nav:hover, a.to_nav:focus {
     border-radius: 2px;
     background: #010137;  
   }
-*/
+
   /* shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/ */
-/*  nav:before, header:after {
+  nav:before, header:after {
     content: "";
     display:table;
   }
@@ -300,3 +295,4 @@ a.to_nav:hover, a.to_nav:focus {
 
 }
 /* End of media queries */
+
