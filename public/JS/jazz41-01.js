@@ -10,6 +10,7 @@ var page_social_media = 6;
 var page_our_store = 7;
 var page_contact = 8;
 var page_community_news = 9;
+var page_classified_ads = 10;
 
 /* var radioExists = true; */
 var siteRadioPaused = false;
@@ -313,6 +314,8 @@ function show_page (page) {
     elem = document.getElementById("contact");
   } else if (page == page_community_news) {
     elem = document.getElementById("community_news");
+  } else if (page == page_classified_ads) {
+    elem = document.getElementById("classified_ads");
   }
 	show_me (elem);  
 }
@@ -347,6 +350,8 @@ function hide_all () {
   elem = document.getElementById("contact");
   hide_me (elem);
   elem = document.getElementById("community_news");
+  hide_me (elem);
+  elem = document.getElementById("classified_ads");
   hide_me (elem);
 }
 
@@ -396,6 +401,11 @@ function show_contact() {
 
 function show_community_news() {
   page = page_community_news; 
+  show_page(page);
+}
+
+function show_classified_ads() {
+  page = page_classified_ads; 
   show_page(page);
 }
 
